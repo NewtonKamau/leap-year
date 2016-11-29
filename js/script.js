@@ -1,11 +1,14 @@
 $(document).ready(function() {
-    $(form# leap - year).submit(function(event)) {
-        event.preventDefault();
-        var year = parseInt($("input#year")).val();
-        var result = leap - year(year);
-        $("#result").text(result);
-        var leapYear = function(year) {
-            return false;
-        };
-    };
-});
+            $(form# leap - year).submit(function(event)) {
+                event.preventDefault();
+                var year = parseInt($("input#year")).val();
+                var result = leap - year(year);
+                $("#result").text(result);
+                var leapYear = function(year) {
+                    if (year % 4 === 0 {
+                            return true
+                        } else {
+                            return false;
+                        };
+                    };
+                });
